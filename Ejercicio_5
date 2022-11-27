@@ -1,0 +1,29 @@
+//Ejercicio 5
+
+//Una variable que contenga tu altura en cm (Entero)
+let altura_cm = 178;
+
+//Una variable que contenga tu altura en m (número de coma flotante)
+let altura_m = 1.78;
+
+//Una variable que contenga tu peso en kg (número de coma flotante)
+
+let peso_kg = 77.81;
+
+//Una variable que contenga tu altura en m redoandeada hacia arriba
+
+let altura_redondeada = altura_m.toFixed(1)
+console.log(altura_redondeada)
+
+//una variable que contenga tu peso en kg redondeado hacia abajo
+
+let peso_redondeado = Math.floor(peso_kg)
+console.log(peso_redondeado)
+
+//una variable que contenga si "el máximo valor que se puede obtener en JS + 1" es igual al máximo valor que se puede obtener en JS
+
+if (Number.MAX_VALUE + 1 === Number.MAX_VALUE) {
+    console.log("Si, es igual")
+} else {
+    console.log("No es igual")
+}
