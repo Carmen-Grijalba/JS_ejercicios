@@ -1,0 +1,54 @@
+//Ejercicio 6
+
+//una variable que contenga la lista de la compra (min 5 elementos)
+
+var listaCompra = ["huevos", "leche", "mantequilla", "harina", "azucar", "velas", "chocolate"]
+
+//modifica la lista de la compra y añádele "Aceite de Girasol"
+
+listaCompra.splice(7, 0, "aceite de girasol")
+console.log(listaCompra)
+
+//Vuelve a modificar la lista de la compra eliminando "Aceite de Girasol"
+
+//listaCompra.pop()
+listaCompra.splice(7,7)
+console.log(listaCompra)
+
+//Una lista de tus 3 películas favoritas (objetos con propiedades: titulo, director, fecha)
+
+const películasFav = [
+    {título: "Dog Day Afternoon", director: "Sidney Lumet", estreno: 1976},
+    {título: "Now, Voyager", director: "Irving Rapper", estreno: 1942},
+    {título: "Boy", director: "Taika Waiti", estreno: 2010}
+]
+
+//Una nueva lista que contenga las películas posteriores al 1 de enero de 2010 (utilizando filter)
+
+const películasPost2010 = películasFav.find(o => o.estreno >= 2010)
+console.log(películasPost2010)
+
+//Una nueva lista que contenga los directores de la lista de películas original (utilizando map)
+
+const directores = películasFav.map((valor, índice) => {
+    return `${valor.director}`
+})
+console.log(directores)
+
+//Una nueva lista que contenga los títulos de la lista de películas original (utilizando map)
+
+const títulos = películasFav.map((valor, índice) => {
+    return `${valor.título}`
+})
+console.log(títulos)
+
+
+//Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando concat)
+
+const directoresyTítulos = directores.concat(títulos)
+console.log(directoresyTítulos)
+
+//Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando el factor de propagación)
+
+const directoresyTítulos_propagación = [...directores, ...títulos]
+console.log(directoresyTítulos_propagación)
