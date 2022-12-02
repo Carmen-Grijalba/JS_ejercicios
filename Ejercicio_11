@@ -1,0 +1,21 @@
+// Ejercicio 11
+
+class Estudiante {
+    _nombre
+    _asignaturas
+    constructor(nombre, asignaturas) {
+        this._nombre = nombre
+        this._asignaturas = asignaturas
+    }
+
+    obtenDatos() {
+        return (`Hola, soy ${this._nombre} y estudio ${this._asignaturas}`)
+    }
+}
+
+
+const estudiante_1 = new Estudiante("Carmen", ["JavaScript", "HTML", "CSS"])
+
+const datos = estudiante_1.obtenDatos()
+
+console.log(datos)
