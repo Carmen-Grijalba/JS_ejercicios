@@ -5,3 +5,7 @@ const botonAlerta = document.querySelector("#btn")
 botonAlerta.addEventListener("click", () => {
     alert("Click en el botón")
 })
+
+$("button").click(function() {
+    console.log("Hola, estoy utilizando jQuery")
+})
